@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Universe</title>
+    <link rel="stylesheet" href="main.css"> 
+  </head>
+
+  <body>
+    <header class="header">
+      <div class = bar>
+        <div class ="searchicon">
+          <img src="img/search.svg">
+        </div>
+        <div class="one">
+        <div class="searchbar">
+                <form action="/search" method="GET">
+                    <input type="text" placeholder="Пошук..." class="searchinput">
+                </form>
+        </div>
+      </div>
+        <div class="logo">
+          <img src="img/logo.png" alt="Логотип компанії">
+        </div>
+        <div class ="account1">
+          <img src="img/profileicon.svg">
+          <a href="#" style="color: white">ENG</a>
+          <img src="img/compareicon.svg">
+          <img src="img/favicon.svg">
+        </div>
+
+        <div class="account2">
+    <div class="burger-icon" onclick="toggleBurgerMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="burger-menu" id="burger-menu">
+    <span class="close-btn" onclick="toggleBurgerMenu()">×</span>
+    <a href="#catalogue">КАТАЛОГ</a>
+    <a href="#offers">АКЦІЇ</a>
+    <a href="#ucinka">УЦІНКА</a>
+    <a href="#">НОВИНИ</a>
+    <a href="#deliveryandpayment">ДОСТАВКА І ОПЛАТА</a>
+    <a href="#contakty">КОНТАКТИ</a>
+</div>
+      </div>
+      <nav class="navigation">
+        <a href="#catalogue">КАТАЛОГ</a>
+        <a href="#offers">АКЦІЇ</a>
+        <a href="#ucinka">УЦІНКА</a>
+        <a href="#">НОВИНИ</a>
+        <a href="#deliveryandpayment">ДОСТАВКА І ОПЛАТА</a>
+        <a href="#contakty">КОНТАКТИ</a>
+      </nav>
+    </header>
+    <main>
+        <div class="banner">
+        <img src="img/banner.jpg" alt="Банер музичних інструментів" class="banner-image">
+        <div class="banner-text">
+          <h1>Широкий асортимент музичних інструментів</h1>
+          <p>Від акустичних гітар до професійних синтезаторів та ударних установок.</p>
+        </div>
+      </div>
+        <section>
+            <div class="stripe">
+                <span id="catalogue"></span>
+               <h1>КАТАЛОГ</h1>
+               <div class="options">
+                    <img src="img/filtericon.svg" id="filter">
+                    <p>За замовчуванням</p>
+                    <img class = "zam" src="img/arrowdownicon.svg">
+                </div> 
+            </div>
+            <div class="instrument-card">
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/guitaricon.svg" alt="Струнні">
+                    <p>Струнні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/pianoicon.svg" alt="Клавішні">
+                    <p>Клавішні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/drumicon.svg" alt="Ударні">
+                    <p>Ударні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/fluteicon.svg" alt="Духові">
+                    <p>Духові</p>
+                </label>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <img src="img/ibanezguitar.png" alt="Гітара 1">
+                    <h3>Бас-гітара IBANEZ GSR180 BK </h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <p class="price">10 920,00 ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/maxtone.png" alt="Гітара 3">
+                    <h3>Акустична гітара Yamaha F310TBS</h3>
+                      <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <p class="price">6 299,00  ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/maxtone.png" alt="Гітара 3">
+                    <h3>Акустична гітара MAXTONE WGC4</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">3 999,00 ₴</p>
+                            <p class="regular-price">4 656,00 ₴</p>
+                            </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/takemine1.png" alt="Гітара 4">
+                    <h3>Акустична гітара TAKAMINE GD10</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <p class="price">10 733,00  ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/esp.png" alt="Гітара 5">
+                    <h3>Електрогітара ESP HEX-6536 BROWN</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <p class="price">102 920,00 ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/esp2icon.png" alt="Гітара 6">
+                    <h3>Електрогітара ESP E-II HORIZON NT</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                       <p class="price">106 259,00  ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/yamahaslicon.png" alt="Гітара 7">
+                    <h3>Silent гітара YAMAHA SLG200N</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">33 799,00 ₴</p>
+                            <p class="regular-price">37 809,00 ₴</p>
+                        </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/corticon.png" alt="Гітара 8">
+                    <h3>Silent гітара CORT Sunset Nylectric </h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <p class="price">22 888,00  ₴</p>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+            </div>
+        </div>
+            <div class="pages">
+                 <button class="arrowleft">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вліво">
+                </button>
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <button class="arrow">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вправо">
+                </button>
+            </div>
+        </section>
+        <section>
+            <span id="offers"></span>
+            <div class="stripe">
+               <h1>АКЦІЇ</h1>
+               <div class="options">
+                    <img src="img/filtericon.svg" id="filter">
+                    <p>За замовчуванням</p>
+                    <img src="img/arrowdownicon.svg">
+                </div> 
+            </div>
+            <div class="instrument-card">
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/guitaricon.svg" alt="Струнні">
+                    <p>Струнні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/pianoicon.svg" alt="Клавішні">
+                    <p>Клавішні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/drumicon.svg" alt="Ударні">
+                    <p>Ударні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/fluteicon.svg" alt="Духові">
+                    <p>Духові</p>
+                </label>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                   <img src="img/yamahatricon.png" alt="Гітара 1">
+                    <h3>Бас-гітара YAMAHA TRBX-123</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                           <p class="sale-price">11 799,00 ₴</p>
+                            <p class="regular-price">12 809,00 ₴</p>
+                        </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                   <img src="img/yamahaslicon.png" alt="Гітара 2">
+                    <h3>Silent гітара YAMAHA SLG200N</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                           <p class="sale-price">33 799,00 ₴</p>
+                            <p class="regular-price">37 809,00 ₴</p>
+                        </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/maxtone.png" alt="Гітара 3">
+                    <h3>Акустична гітара MAXTONE WGC4</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">3 999,00 ₴</p>
+                            <p class="regular-price">4 656,00 ₴</p>
+                            </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/yamahatr2icon.png" alt="Гітара 4">
+                    <h3>Бас-гітара YAMAHA TRBX-123 </h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                           <p class="sale-price">11 799,00 ₴</p>
+                            <p class="regular-price">12 809,00 ₴</p>
+                        </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                 <button class="arrowleft">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вліво">
+                </button>
+                <span class="number active">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <button class="arrow">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вправо">
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="stripe">
+                <span id="ucinka"></span>
+               <h1>УЦІНКА</h1>
+               <div class="options">
+                    <img src="img/filtericon.svg" id="filter">
+                    <p>За замовчуванням</p>
+                    <img src="img/arrowdownicon.svg">
+                </div> 
+            </div>
+            <div class="instrument-card">
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/guitaricon.svg" alt="Струнні">
+                    <p>Струнні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/pianoicon.svg" alt="Клавішні">
+                    <p>Клавішні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/drumicon.svg" alt="Ударні">
+                    <p>Ударні</p>
+                </label>
+                <label class="instrument">
+                    <input type="radio" name="instrument" hidden>
+                    <img src="img/fluteicon.svg" alt="Духові">
+                    <p>Духові</p>
+                </label>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                     <img src="img/cortad.png" alt="Гітара 1">
+                    <h3>CORT AD-568810 (Black Satin)</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">4 331,00 ₴</p>
+                            <p class="regular-price">5 775,00 ₴</p>
+                            </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/cortcr.png" alt="Гітара 2">
+                    <h3>CORT CRDMS200 (Flip Aqua Blue)</h3>
+                      <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                    <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">16 199,00 ₴</p>
+                            <p class="regular-price">19 058,00 ₴</p>
+                        </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/maxtone.png" alt="Гітара 3">
+                    <h3>Акустична гітара MAXTONE WGC4</h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">2 999,00 ₴</p>
+                            <p class="regular-price">4 656,00 ₴</p>
+                            </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/yamahatr2icon.png" alt="Гітара 4">
+                    <h3>Бас-гітара YAMAHA TRBX-123 </h3>
+                    <div class="stars">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                        <img src="img/staricon.svg" alt="Зірка">
+                     </div>
+                     <div class="price-buy">
+                        <div class="price-buy2">
+                            <p class="sale-price">10 799,00 ₴</p>
+                            <p class="regular-price">12 809,00 ₴</p>
+                            </div>
+                        <button class="buy-button"><img src="img/carticon.svg" alt="Кошик" class="cart-icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                 <button class="arrowleft">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вліво">
+                </button>
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <button class="arrow">
+                    <img src="img/arrowrighticon1.svg" alt="Стрілка вправо">
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="video-container">
+        <video controls>
+            <source src="img/video.mp4" type="video/mp4">
+            Ваш браузер не підтримує відтворення відео.
+        </video>
+    </div>
+        </section>
+        <section>
+            <div class="dandp">
+                <span id="deliveryandpayment"></span>
+                <h1>ДОСТАВКА І ОПЛАТА</h1>
+                <h2>Доставка</h2>
+                <p id="p1">Товари доставляються по всій Україні наступними кур'єрськими службами:</p>
+                <div class="post">
+                    <img src="img/novapost.png" alt="Нова пошта" >
+                    <ul class="contact-list">
+                        <li>Платна доставка (за тарифами перевізника) до відділення «Нової Пошти» – при замовленні на суму менше 5000 грн.</li>
+                        <li>Безкоштовна доставка у відділення «Нової Пошти» – при замовленні на суму понад 5000 грн.</li>
+                        <li>Безкоштовна адресна доставка «Новою Поштою» – при замовленні на суму понад 10000 грн.</li>
+                    </ul>
+                </div>
+                <div class="post">
+                    <img src="img/unnamed.png" alt="Нова пошта" >
+                    <ul class="contact-list">
+                        <li>Платна доставка (за тарифами перевізника) до відділення «Укрпошти» – при замовленні на суму менше 3000 грн.</li>
+                        <li>Безкоштовна доставка у відділення «Укрпошти» – при замовленні на суму понад 3000 грн.</li>
+                        <li>Безкоштовна адресна доставка «Укрпоштою» – при замовленні на суму понад 8000 грн.</li>
+                    </ul>
+                </div>
+                <h2>Оплата</h2>
+                <div class="paymentways">
+                    <div>
+                        <div class="waytitle">
+                            <img src="img/cashicon.svg" alt="Готівка">
+                            <h3>Готівка</h3>
+                        </div>
+                        <ul class="contact-list">
+                            <li>При самовивозі з магазинів мережі Music Universe або з магазинів партнерів.</li>
+                            <li>Кур'єру по факту доставки.</li>
+                            <li>Післяплатою при отриманні у відділенні транспортної служби.</li>
+                        </ul>
+                    </div>
+                    <div>
+                    <div class="waytitle">
+                        <img src="img/cardicon.svg" alt="Картка">
+                        <h3>Карта</h3>
+                    </div>
+                    <ul class="contact-list">
+                        <li>Оплата замовлення на сайті.</li>
+                        <li>Через платіжний термінал у всіх магазинах мережі.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <footer>
+     <span id="contakty"></span>
+        <h1>КОНТАКТИ</h1>
+        <div class="information">
+            <div class="contactform">
+                <h2>Контактна форма</h2>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <div class="form-item">
+                            <label for="name">Ім'я:</label>
+                                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+380" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Електронна пошта:</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="comment-group">
+                        <label for="comment">Ваш коментар:</label>
+                        <textarea id="comment" name="comment" rows="4" placeholder="Введіть ваш коментар" required></textarea>
+                     </div>
+                    <div class="submit-block">
+                        <button type="submit" class="submit-btn">Відправити</button>
+                        <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        Я даю згоду на обробку даних
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="social-media-block">
+                <a href="https://www.facebook.com/muzikant.ua" target="_blank">
+                    <img src="img/facebookicon.svg" alt="Facebook" class="socialmedia">
+                </a>
+                <a href="https://www.instagram.com/jammusicstore/" target="_blank">
+                    <img src="img/instagramicon.svg" alt="Instagram" class="socialmedia">
+                </a>
+                <div class="contact-block">
+                <div class="contact-info">
+                    <p>(032)-111-11-11 (безкоштовно зі стаціонарних телефонів по Україні)</p>
+                    <p>(066) 222-22-22 (Vodafone), (097)-333-33-33 (Kyivstar)</p>
+                </div>
+            </div>
+         </div>
+      </footer>
+<script>
+      function toggleBurgerMenu() {
+    const burgerMenu = document.getElementById('burger-menu');
+    const burgerIcon = document.querySelector('.burger-icon');
+    burgerMenu.classList.toggle('open');
+    burgerIcon.classList.toggle('open');
+    }
+</script>
+
+  </body>
+</html>
